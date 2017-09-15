@@ -14,6 +14,19 @@ gem 'coffee-rails', '4.2.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+#Use twitter bootstrap library for front-end UI and layout
+gem 'bootstrap-sass', '3.3.7'
+
+# Use font awesome sass gem for adding icons
+gem 'font-awesome-sass', '4.7'
+
+# Use Hirb for better database table display in console
+gem 'hirb', '0.7.3'
+
+# Use devise for user authentication
+gem 'devise', '4.2.0'
+
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
