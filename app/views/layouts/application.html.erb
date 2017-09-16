@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <nav class="navbar sticky-top navbar-dark bg-dark" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,12 +25,9 @@
           <% end %>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
-          <div class="nav navbar-nav navbar-right">
-            
-          </div>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "About Zeph", "#" %></li>
-            <li><%= link_to "Leave Feedback", "#" %></li>
+            <li><%= link_to "About Zeph", about_path %></li>
+            <li><%= link_to "Leave Feedback!", "#" %></li>
           </ul>
         </div>
       </div>

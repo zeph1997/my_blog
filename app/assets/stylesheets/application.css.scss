@@ -21,54 +21,148 @@
 
 h1, h2, h3 {
     font-family:'Open Sans', sans-serif;
+    margin-top:10px;
 }
 
 body {
-    //Gradient provided by @_ighosh at uiGradients.com
-    background: #c21500;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color:#337ab7;
 }
 
-//Background gradient
-.navbar, .home-callout {
-    //Gradient provided by @_ighosh at uiGradients.com
-    background: #FF8008;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}
 
 //Nav styles
 .navbar {
-    border-bottom: solid 2px white;
+    border-bottom: solid 1px #337ab7;
+    background-color:white;
+    border-radius:0;
 }
 
 .navbar-brand {
     font-family: 'Open Sans', sans-serif;
-    font-weight:800;
+    font-weight:700;
 }
 
-.navbar-default .navbar-brand, 
-.navbar-default .navbar-nav li a {
-    color:white;
+.navbar-brand, 
+.navbar-nav li a {
+    color: #337ab7;
     &:hover {
-        color:white;
-        opacity:0.75;
+        color: #337ab7;
+        opacity: 0.75;
     }
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color:white;
+.navbar-toggle .icon-bar {
+    background-color:#337AB7;
 }
 
-.navbar-default .navbar-toggle {
-    border: 2px solid white;
+.navbar-toggle {
+    border: 2px solid #337AB7;
     &:hover, &:focus {
-        background-color: #00c6ff;
+        background-color: #61B6FF;
     }
 }
 
 .post-holder {
     margin-top:20px;
+}
+
+/*// Dark links against a light background
+.navbar-light {
+  .navbar-brand {
+    color: $navbar-light-active-color;
+
+    @include hover-focus {
+      color: $navbar-light-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-light-color;
+
+      @include hover-focus {
+        color: $navbar-light-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-light-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-light-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-light-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-light-color;
+  }
+}
+
+// White links against a dark background
+.navbar-dark {
+  .navbar-brand {
+    color: $navbar-dark-active-color;
+
+    @include hover-focus {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-dark-color;
+
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-dark-color;
+    border-color: $navbar-dark-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-dark-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-dark-color;
+  }
+}*/
+
+.sticky-top {
+    position:sticky;
+    top: 0;
+    z-index: 1071;
+}
+
+
+//About page
+.about-page {
+    color:white;
 }
